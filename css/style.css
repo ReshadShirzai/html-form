@@ -1,0 +1,42 @@
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 16px Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(0,0,255);
+}
+
+button {
+    margin-left: 95px;
+    font-weight: bold;
+}
