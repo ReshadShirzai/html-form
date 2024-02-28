@@ -5,20 +5,20 @@ const port = 3000
 
 app.use(cors())
 
-const messages = [];
+const message = [];
 
 app.get('/message', (req, res) => {
-    messages.push(
-        {
-            name: req.query.name,
-            email: req.query.email,
-            message: req.query.message
-        }
-    );
-    console.log(req.query.name);
-    console.log(req.query.email);
-    console.log(req.query.message);
-  res.send('Hello World!')
+  message.push(
+    {
+      name: req.query.name,
+      email: req.query.email,
+      message: req.query.message
+    }
+  );
+  // console.log(req.query.name);
+  console.log(req.query);
+  //  console.log(req.query.message);
+  res.json(message);
 })
 
 app.listen(port, () => {

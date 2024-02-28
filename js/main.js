@@ -5,7 +5,7 @@ function sendData() {
     const email = document.querySelector("#mail").value;
     const message = document.querySelector("#msg").value;
 
-    fetch("http://localhost:3000/message?name=reshad&email=r@gmail.com&live.nl&message=test");
+    fetch(`http://localhost:3000/message?name=${firstName}&email=${email}&live.nl&message=${message}`);
 
     console.log({firstName, email, message});
 }

@@ -1,4 +1,4 @@
-form {
+body {
     margin: 0 auto;
     width: 400px;
     padding: 10px;
@@ -13,7 +13,7 @@ ul {
     margin: 0;
 }
 
-form li + li {
+body li + li {
     margin-top: 10px;
 }
 
